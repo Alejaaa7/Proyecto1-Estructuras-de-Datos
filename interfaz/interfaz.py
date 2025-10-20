@@ -71,7 +71,7 @@ class VisualizadorEstructuras:
                 - text=True devuelve strings en lugar de bytes
                 - shell=True usa el shell del sistema para ejecutar el comando"""
             
-            resultado = subprocess.run(["main.exe"], capture_output=True,
+            resultado = subprocess.run(["../main.exe"], capture_output=True,
                                         text=True, shell=True)
             
             # mostrar  la salida estándar del programa C++ (lo que se ve en consola)
