@@ -1,0 +1,15 @@
+# Ejecutables
+*.exe
+*.o
+*.obj
+
+# Python
+__pycache__/
+*.pyc
+
+# IDEs
+.vscode/
+.vs/
+
+# Sistema
+.DS_Store
