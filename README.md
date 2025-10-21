@@ -180,9 +180,9 @@ PROYECTO - Estructuras/
 - **Visualización**: Cajas contiguas con índices
 
 ## Autores
-- [Andrea Alejandra Suárez]
-- [Manuel Arturo Fajardo]
+- <u>Andrea Alejandra Suárez</u>
+- <u>Manuel Arturo Fajardo</u>
 
 ## Licencia
+
 Este proyecto es con fines educativos para el curso de Estructuras de Datos.
----
