@@ -18,8 +18,6 @@ A pesar de no ser necesario, consideramos que realizar nosotros mismos las clase
 
 Luego, a fin de facilitar la realización de la interfaz gráfica que permite la visualización de las estructuras, se realizó un esquema de cómo debería verse la ventana en Tkinter, una biblioteca de python que permite realizar ventanas y componentes visuales como botones, cuadros de texto, menús, gráficos y demás.
 
-*AGREGAR FOTICO DE LA ESQUEMATIZACIÓN DE LA INTERFAZ *
-
 El siguiente paso fue realizar la "conexión" entre el backend, realizado en c++, y el frontend (interfaz de Tkinter en python). Para llevar esto a cabo, se generó un archivo compilado (.exe) que se ejecuta desde python, de esta manera se permite al ususario acceder y visualizar las estructuras desde la capa visual generada por python sin necesidad de interactuar directamente con la consola.
 
 *AGREGAR FOTO DE LA INTERFAZ YA LINDA *
