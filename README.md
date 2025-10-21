@@ -20,4 +20,172 @@ Luego, a fin de facilitar la realización de la interfaz gráfica que permite la
 
 El siguiente paso fue realizar la "conexión" entre el backend, realizado en c++, y el frontend (interfaz de Tkinter en python). Para llevar esto a cabo, se generó un archivo compilado (.exe) que se ejecuta desde python, de esta manera se permite al ususario acceder y visualizar las estructuras desde la capa visual generada por python sin necesidad de interactuar directamente con la consola.
 
-*AGREGAR FOTO DE LA INTERFAZ YA LINDA *
+## Requisitos del Sistema
+
+### Python
+- **Versión**: Python 3.8 o superior
+- **Bibliotecas necesarias**:
+  - `tkinter` (incluido en Python por defecto)
+  - `subprocess` (incluido en Python por defecto) 
+  - `os` y `sys` (incluidos en Python por defecto)
+  - `re` (incluido en Python por defecto)
+
+### C++ 
+- **Compilador**: g++ (GCC) o cualquier compilador C++ compatible
+- **Sistema**: Windows, Linux o macOS
+
+### Sistema Operativo
+- Windows 10/11
+- Linux (Ubuntu, Fedora, etc.)
+- macOS
+
+## Manual de Usuario
+
+### Inicio Rápido
+
+1. **Ejecutar la aplicación:**
+```
+cd interfaz
+python interfaz.py
+```
+
+2. **Seleccionar estructura:** Haz clic en los signos ❕ superiores (Lista, Pila, Cola, Array), para seleccionar una estructura y ver un ejemplo básico de la misma.
+
+3. **Escribir código:** Usa el editor izquierdo para escribir código C++.
+
+4. **Ejecutar:** Presiona el botón **EJECUTAR** para visualizar.
+
+### Funcionalidades Principales
+
+#### Editor de Código
+- Escribe código C++ válido usando las estructuras implementadas
+- **Ejemplos predefinidos** según la estructura seleccionada
+- **Sintaxis resaltada** para mejor legibilidad
+
+#### Botones Interactivos
+- **➕ AGREGAR:** Inserta elemento (usa el valor del campo numérico)
+- **✖️ ELIMINAR:** Remueve elemento (verifica existencia primero)
+- **🔄️ VACIAR:** Limpia la estructura actual completamente
+- **EJECUTAR:** Procesa y visualiza todo el código actual
+
+#### Visualizaciones
+- **Cada estructura** tiene su propia paleta de colores.
+- **Elementos centrados** automáticamente.
+- **Títulos descriptivos** y comportamiento visual claro.
+
+### Ejemplos de Uso
+
+#### Lista Enlazada
+```
+List miLista;
+miLista.insertAtEnd(10);
+miLista.insertAtEnd(20);
+miLista.insertAtEnd(30);
+```
+
+#### Pila (LIFO)
+```
+Stack miPila;
+miPila.push(100);
+miPila.push(200);
+miPila.push(300);
+```
+
+#### Cola (FIFO)
+```
+Queue miCola;
+miCola.enqueue(50);
+miCola.enqueue(60);
+miCola.enqueue(70);
+```
+
+#### Array
+```
+Array miArray(3);
+miArray.set(0, 500);
+miArray.set(1, 600);
+miArray.set(2, 700);
+```
+
+### Mensajes y Errores
+
+- **✅ Operación exitosa:** Mensaje verde de confirmación (al hacer una operación).
+- **❌ Error:** Mensaje rojo explicando el problema.
+- **⚠️ Valores inválidos:** Se notifica si intentas eliminar elementos inexistentes.
+
+## Características Principales
+
+### Visualizaciones Aesthetic
+- **Lista Enlazada**: Nodos con división DATA/NEXT + flechas conectivas
+- **Pila (LIFO)**: Elementos apilados verticalmente + indicador TOPE
+- **Cola (FIFO)**: Elementos en fila + labels FRENTE/FINAL  
+- **Array**: Cajas contiguas con índices + acceso directo
+
+### Interfaz Intuitiva
+- **Editor de código C++ integrado**
+- **Botones interactivos**: Agregar, Eliminar, Vaciar, Ejecutar
+- **Análisis en tiempo real** del código del usuario
+- **Feedback visual inmediato** de todas las operaciones
+
+### Tecnologías Utilizadas
+- **Backend**: C++ (implementación de estructuras)
+- **Frontend**: Python + Tkinter (interfaz gráfica)
+- **Visualización**: Canvas de Tkinter + algoritmos de dibujo
+- **Comunicación**: Análisis inteligente de código (sin compilación)
+
+## Estructura del Proyecto
+
+```
+PROYECTO - Estructuras/
+├── interfaz/
+│   ├── interfaz.py              # Interfaz gráfica principal
+│   ├── diseño_interfazFINAL.png # Diseño visual
+│   ├── utils/
+│   │   └── parser.py            # Analizador de salida C++
+│   └── visualizaciones/
+│       ├── lista_visual.py      # Visualización de lista
+│       ├── pila_visual.py       # Visualización de pila
+│       ├── cola_visual.py       # Visualización de cola
+│       └── arreglo_visual.py    # Visualización de array
+├── src/
+│   ├── main.cpp                 # Programa principal C++
+│   ├── list.h/cpp               # Implementación de lista
+│   ├── stack.h/cpp              # Implementación de pila
+│   ├── queue.h/cpp              # Implementación de cola
+│   └── array.h/cpp              # Implementación de array
+└── README.md
+```
+
+## Estructuras de Datos Implementadas
+
+### Lista Enlazada
+- **Inserción**: `insertAtEnd()`, `insertAtBeginning()`
+- **Eliminación**: `removeValue()`, `removeAt()`
+- **Búsqueda**: `find()`
+- **Visualización**: Nodos conectados con punteros
+
+### Pila (LIFO)
+- **Operaciones**: `push()`, `pop()`, `peek()`
+- **Comportamiento**: Último en Entrar, Primero en Salir
+- **Visualización**: Elementos apilados verticalmente
+
+### Cola (FIFO)  
+- **Operaciones**: `enqueue()`, `dequeue()`, `getFront()`
+- **Comportamiento**: Primero en Entrar, Primero en Salir
+- **Visualización**: Elementos en fila horizontal
+
+### Array Dinámico
+- **Operaciones**: `set()`, `get()`, `pushBack()`, `removeAt()`
+- **Característica**: Acceso directo por índice O(1)
+- **Visualización**: Cajas contiguas con índices
+
+## Autores
+- [Andrea Alejandra Suárez]
+- [Manuel Arturo Fajardo]
+
+## Licencia
+Este proyecto es con fines educativos para el curso de Estructuras de Datos.
+
+---
+
+**¡Listo! Solo copia y pega TODO esto en tu README.md** y tendrás la documentación completa ✅
