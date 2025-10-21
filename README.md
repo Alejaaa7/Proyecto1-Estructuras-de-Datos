@@ -185,7 +185,4 @@ PROYECTO - Estructuras/
 
 ## Licencia
 Este proyecto es con fines educativos para el curso de Estructuras de Datos.
-
 ---
-
-**¡Listo! Solo copia y pega TODO esto en tu README.md** y tendrás la documentación completa ✅
