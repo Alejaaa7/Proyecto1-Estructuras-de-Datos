@@ -31,7 +31,7 @@ El siguiente paso fue realizar la "conexión" entre el backend, realizado en c++
   - `re` (incluido en Python por defecto)
 
 ### C++ 
-- **Compilador**: g++ (GCC) o cualquier compilador C++ compatible
+- **Compilador**: g++ (GCC) o cualquier compilador C++ compatible (NO es obligatorio en *esta* versión)
 - **Sistema**: Windows, Linux o macOS
 
 ### Sistema Operativo
