@@ -57,3 +57,5 @@ __pycache__/
 # debug information files
 *.dwo
 >>>>>>> aff5f4d7655c7525bd47e67d7edfe827c450cda3
+"temp_usuario.cpp" 
+"temp_usuario.exe" 
